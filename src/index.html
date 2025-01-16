@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MariGold</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-gray-100 font-sans">
+    <header class="bg-pink-200 text-black shadow-lg sticky top-0 z-50">
+      <div
+        class="container mx-auto p-4 flex justify-between items-center w-[93%]"
+      >
+        <img src="/img/logo1.png" alt="Logo" class="w-24" />
+        <ul class="flex gap-8 text-lg font-light">
+          <li>
+            <a href="#" class="hover:text-pink-600 transition-all">Home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-pink-600 transition-all">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-pink-600 transition-all">Menu</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-pink-600 transition-all">Gallery</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-pink-600 transition-all">Review</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-pink-600 transition-all">Order</a>
+          </li>
+        </ul>
+        <div class="flex gap-6 text-xl">
+          <i class="fas fa-search hover:text-pink-600 cursor-pointer"></i>
+          <i class="fas fa-heart hover:text-pink-600 cursor-pointer"></i>
+          <i
+            class="fas fa-cart-shopping hover:text-pink-600 cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative bg-cover bg-center h-screen"
+      style="
+        background-image: url('https://i.pinimg.com/736x/4f/e2/ca/4fe2ca1acc1d8341c83795143b220d26.jpg');
+      "
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-center"
+      >
+        <div class="text-white p-8">
+          <h1
+            class="text-5xl font-bold mb-4 animate__animated animate__fadeInUp"
+          >
+            Get Fresh <span class="text-pink-600">Flower</span> in an Easy Way
+          </h1>
+          <p class="text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
+            we bring nature’s finest blooms straight to your doorstep.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center px-8 py-3 bg-pink-600 text-white rounded-md text-lg transition-all transform hover:scale-105 hover:bg-pink-800"
+          >
+            Order Now <i class="fas fa-chevron-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 w-[90%] mx-auto">
+      <h2 class="text-4xl text-center font-semibold text-gray-800">
+        Best Selling <span class="text-pink-600">Plants</span>
+      </h2>
+      <div
+        class="container mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+      >
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+        >
+          <div class="relative">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/R5547D_LOL_preset_proflowers-mx-hero-sv-new.jpg?v=1711050830&width=768"
+              alt="Pizza"
+              class="w-full h-49 object-cover"
+            />
+            <i
+              class="fas fa-heart absolute top-4 right-4 bg-white p-2 rounded-full text-pink-600 cursor-pointer"
+            ></i>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-pink-600">
+              Peach and Pink Roses
+            </h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              Soft and romantic, like a whisper of love.
+            </p>
+            <h4 class="text-lg text-pink-600 mt-2">Price: $60</h4>
+            <button
+              class="mt-4 px-6 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-800 transition-all"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+        >
+          <div class="relative">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/R5549D_LOL_preset_proflowers-mx-tile-wide-sv-new.jpg?v=1735232149&width=768"
+              alt="Pizza"
+              class="w-full h-49 object-cover"
+            />
+            <i
+              class="fas fa-heart absolute top-4 right-4 bg-white p-2 rounded-full text-pink-600 cursor-pointer"
+            ></i>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-pink-600">
+              White Roses and Lilies
+            </h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              An ethereal display of white roses and lilies, representing
+              purity, peace, and sympathy.
+            </p>
+            <h4 class="text-lg text-pink-600 mt-2">Price: $50</h4>
+            <button
+              class="mt-4 px-6 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-800 transition-all"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+        >
+          <div class="relative">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/R5548D_LOL_preset_proflowers-mx-tile-wide-sv-new.jpg?v=1735245904&width=768"
+              alt="Pizza"
+              class="w-full h-49 object-cover"
+            />
+            <i
+              class="fas fa-heart absolute top-4 right-4 bg-white p-2 rounded-full text-pink-600 cursor-pointer"
+            ></i>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-pink-600">
+              Red and Orange Roses
+            </h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              Red and orange roses symbolize energy, enthusiasm, and excitement
+            </p>
+            <h4 class="text-lg text-pink-600 mt-2">Price: $40</h4>
+            <button
+              class="mt-4 px-6 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-800 transition-all"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+        >
+          <div class="relative">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/R5569D_LOL_preset_proflowers-mx-tile-wide-sv-new.jpg?v=1735275055&width=768"
+              alt="Pizza"
+              class="w-full h-49 object-cover"
+            />
+            <i
+              class="fas fa-heart absolute top-4 right-4 bg-white p-2 rounded-full text-pink-600 cursor-pointer"
+            ></i>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-pink-600">
+              Pink and Purple Flowers
+            </h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              Pink and purple flowers convey joy, playfulness, and youthful
+              energy.
+            </p>
+            <h4 class="text-lg text-pink-600 mt-2">Price: $70</h4>
+            <button
+              class="mt-4 px-6 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-800 transition-all"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+        >
+          <div class="relative">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/R5626D_LOL_preset_proflowers-mx-hero-sv-new.jpg?v=1715192349&width=768"
+              alt="Pizza"
+              class="w-full h-49 object-cover"
+            />
+            <i
+              class="fas fa-heart absolute top-4 right-4 bg-white p-2 rounded-full text-pink-600 cursor-pointer"
+            ></i>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-pink-600">
+              Pink and White Roses
+            </h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              A delicate blend of soft pink and pristine white roses,
+              symbolizing innocence, purity, and new beginnings.
+            </p>
+            <h4 class="text-lg text-pink-600 mt-2">Price: $60</h4>
+            <button
+              class="mt-4 px-6 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-800 transition-all"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+        >
+          <div class="relative">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0507/3754/5401/t/1/assets/S5450D_LOL_preset_proflowers-mx-tile-wide-sv-new.jpeg?v=1649686661&width=768"
+              alt="Pizza"
+              class="w-full h-49 object-cover"
+            />
+            <i
+              class="fas fa-heart absolute top-4 right-4 bg-white p-2 rounded-full text-pink-600 cursor-pointer"
+            ></i>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-pink-600">
+              White Roses and Lilies
+            </h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              An ethereal display of white roses and lilies, representing
+              purity, peace, and sympathy
+            </p>
+            <h4 class="text-lg text-pink-600 mt-2">Price: $50</h4>
+            <button
+              class="mt-4 px-6 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-800 transition-all"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+        >
+          <div class="relative">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/NAED_LOL_preset_proflowers-mx-hero-sv-new.jpg?v=1735550282&width=768"
+              alt="Pizza"
+              class="w-full h-49 object-cover"
+            />
+            <i
+              class="fas fa-heart absolute top-4 right-4 bg-white p-2 rounded-full text-pink-600 cursor-pointer"
+            ></i>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-pink-600">
+              White Roses and Lilies
+            </h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              A serene arrangement of white roses and lilies, conveying
+              elegance, hope, and renewal.
+            </p>
+            <h4 class="text-lg text-pink-600 mt-2">Price: $50</h4>
+            <button
+              class="mt-4 px-6 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-800 transition-all"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+        >
+          <div class="relative">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/S5272D_LOL_preset_ftd-mx-tile-wide-sv-new.jpg?v=1715364319&width=768"
+              alt="Pizza"
+              class="w-full h-49 object-cover"
+            />
+            <i
+              class="fas fa-heart absolute top-4 right-4 bg-white p-2 rounded-full text-pink-600 cursor-pointer"
+            ></i>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-pink-600">
+              Pink and White Roses
+            </h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              cheerful and vibrant mix of pink and white roses, symbolizing joy,
+              gratitude, and appreciation.
+            </p>
+            <h4 class="text-lg text-pink-600 mt-2">Price: $60</h4>
+            <button
+              class="mt-4 px-6 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-800 transition-all"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-100 w-[90%] mx-auto">
+      <h2 class="text-4xl text-center font-semibold text-gray-800">
+        Our <span class="text-pink-600">Flowers</span>
+      </h2>
+      <div
+        class="container mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+      >
+        <div class="relative group">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/YMF01_LOL_preset_ftd-mx-tile-wide-sv-new.jpg?v=1730868660&width=768"
+            alt="Gallery 1"
+            class="w-full h-66 object-cover rounded-lg transition-all transform group-hover:scale-105 group-hover:brightness-75"
+          />
+          <div
+            class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-all"
+          >
+            <button class="px-6 py-2 bg-pink-600 text-white rounded-md">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div class="relative group">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/YMF03_LOL_preset_ftd-mx-hero-sv-new.jpg?v=1730177317&width=768"
+            alt="Gallery 1"
+            class="w-full h-66 object-cover rounded-lg transition-all transform group-hover:scale-105 group-hover:brightness-75"
+          />
+          <div
+            class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-all"
+          >
+            <button class="px-6 py-2 bg-pink-600 text-white rounded-md">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div class="relative group">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/YMF04_LOL_preset_ftd-mx-tile-wide-sv-new.jpg?v=1730177386&width=768"
+            alt="Gallery 1"
+            class="w-full h-66 object-cover rounded-lg transition-all transform group-hover:scale-105 group-hover:brightness-75"
+          />
+          <div
+            class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-all"
+          >
+            <button class="px-6 py-2 bg-pink-600 text-white rounded-md">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div class="relative group">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/P2211_LOL_preset_ftd-mx-tile-wide-sv-new.jpg?v=1728656343&width=768"
+            alt="Gallery 1"
+            class="w-full h-66 object-cover rounded-lg transition-all transform group-hover:scale-105 group-hover:brightness-75"
+          />
+          <div
+            class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-all"
+          >
+            <button class="px-6 py-2 bg-pink-600 text-white rounded-md">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div class="relative group">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/PB43_LOL_preset_ftd-mx-tile-wide-sv-new.jpg?v=1717427709&width=768"
+            alt="Gallery 1"
+            class="w-full h-66 object-cover rounded-lg transition-all transform group-hover:scale-105 group-hover:brightness-75"
+          />
+          <div
+            class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-all"
+          >
+            <button class="px-6 py-2 bg-pink-600 text-white rounded-md">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div class="relative group">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/P4008_LOL_preset_ftd-mx-tile-wide-sv-new.jpg?v=1726256339&width=768"
+            alt="Gallery 1"
+            class="w-full h-66 object-cover rounded-lg transition-all transform group-hover:scale-105 group-hover:brightness-75"
+          />
+          <div
+            class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-all"
+          >
+            <button class="px-6 py-2 bg-pink-600 text-white rounded-md">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div class="relative group">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0507/3754/5401/files/YAF17_LOL_preset_ftd-mx-tile-wide-sv-new.jpg?v=1735037787&width=768"
+            alt="Gallery 1"
+            class="w-full h-66 object-cover rounded-lg transition-all transform group-hover:scale-105 group-hover:brightness-75"
+          />
+          <div
+            class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-all"
+          >
+            <button class="px-6 py-2 bg-pink-600 text-white rounded-md">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div class="relative group">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0507/3754/5401/t/1/assets/P4251_LOL_preset_ftd-mx-tile-wide-sv-new.jpeg?v=1680453053&width=768"
+            alt="Gallery 1"
+            class="w-full h-66 object-cover rounded-lg transition-all transform group-hover:scale-105 group-hover:brightness-75"
+          />
+          <div
+            class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-all"
+          >
+            <button class="px-6 py-2 bg-pink-600 text-white rounded-md">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 w-[90%] mx-auto">
+      <h2 class="text-4xl text-center font-semibold text-gray-800">
+        Customer <span class="text-pink-600">Reviews</span>
+      </h2>
+      <div class="container mx-auto mt-12 flex justify-center space-x-8">
+        <div
+          class="bg-white rounded-lg shadow-lg w-72 p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
+        >
+          <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4">
+            <img
+              src="/img/Nika.jpg"
+              alt="Customer 1"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h3 class="text-xl font-semibold text-pink-600">Luy Kanika</h3>
+          <div class="flex justify-center gap-4 mt-4">
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+          <p class="text-gray-600 mt-4 text-sm">
+            "The flowers were absolutely beautiful, and the delivery was fast! I
+            highly recommend this service."
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg w-72 p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
+        >
+          <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4">
+            <img
+              src="/img/net.jpg"
+              alt="Customer 1"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h3 class="text-xl font-semibold text-pink-600">Sorn Sophamarinet</h3>
+          <div class="flex justify-center gap-4 mt-4">
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+          <p class="text-gray-600 mt-4 text-sm">
+            "I was amazed by the quality of the flowers. They arrived fresh and
+            made the perfect gift!"
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg w-72 p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
+        >
+          <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4">
+            <img
+              src="/img/elodie.jpg"
+              alt="Customer 1"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h3 class="text-xl font-semibold text-pink-600">Sok Elodie</h3>
+          <div class="flex justify-center gap-4 mt-4">
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+          <p class="text-gray-600 mt-4 text-sm">
+            "The bouquet I ordered was beyond beautiful. It brightened up my
+            room instantly!"
+          </p>
+        </div>
+        <div
+          class="bg-white rounded-lg shadow-lg w-72 p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
+        >
+          <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4">
+            <img
+              src="/img/nich.jpg"
+              alt="Customer 1"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h3 class="text-xl font-semibold text-pink-600">An Sreynich</h3>
+          <div class="flex justify-center gap-4 mt-4">
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-pink-600"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+          <p class="text-gray-600 mt-4 text-sm">
+            "I ordered flowers for my friend's birthday and they were a huge
+            hit! Thank you for such great service."
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-pink-600 text-white text-center py-6">
+      <p>&copy; 2025 Flowers. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
