@@ -16,47 +16,48 @@
 
   <body class="bg-gray-100 font-sans">
     <header class="bg-pink-200 text-black shadow-lg sticky top-0 z-50">
-      <div
-        class="container mx-auto p-4 flex flex-wrap items-center justify-between w-[93%]"
-      >
+      <div class="container mx-auto p-4 flex items-center justify-between w-[93%]">
         <!-- Logo -->
-        <img
-          src="./img/logo1.png"
-          alt="Logo"
-          class="w-20 sm:w-24 mb-4 sm:mb-0"
-        />
-        <ul
-          class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-base sm:text-lg font-light items-center sm:items-start"
-        >
-          <li>
-            <a href="#" class="hover:text-pink-600 transition-all">Home</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-pink-600 transition-all">About</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-pink-600 transition-all">Menu</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-pink-600 transition-all">Gallery</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-pink-600 transition-all">Review</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-pink-600 transition-all">Order</a>
-          </li>
+        <img src="../img/logo1.png" alt="Logo" class="w-20 sm:w-24" />
+    
+        <!-- Hamburger Menu (for small screens) -->
+        <div class="sm:hidden relative">
+          <input type="checkbox" id="menu-toggle" class="hidden peer" />
+          <label for="menu-toggle" class="cursor-pointer text-xl">
+            <i class="fas fa-bars"></i>
+          </label>
+    
+          <!-- Navigation Menu (Dropdown for small screens) -->
+          <ul class="hidden peer-checked:block absolute top-12 left-0 w-full bg-pink-200 flex flex-col gap-4 text-base font-light">
+            <li><a href="#" class="block px-4 py-2 hover:text-pink-600 transition-all">Home</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:text-pink-600 transition-all">About</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:text-pink-600 transition-all">Menu</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:text-pink-600 transition-all">Gallery</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:text-pink-600 transition-all">Review</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:text-pink-600 transition-all">Order</a></li>
+          </ul>
+        </div>
+    
+        <!-- Navigation Menu (for medium and large screens) -->
+        <ul class="hidden sm:flex gap-8 text-lg font-light">
+          <li><a href="#" class="hover:text-pink-600 transition-all">Home</a></li>
+          <li><a href="#" class="hover:text-pink-600 transition-all">About</a></li>
+          <li><a href="#" class="hover:text-pink-600 transition-all">Menu</a></li>
+          <li><a href="#" class="hover:text-pink-600 transition-all">Gallery</a></li>
+          <li><a href="#" class="hover:text-pink-600 transition-all">Review</a></li>
+          <li><a href="#" class="hover:text-pink-600 transition-all">Order</a></li>
         </ul>
-        <div class="flex gap-4 sm:gap-6 text-lg sm:text-xl mt-4 sm:mt-0">
+    
+        <!-- Icons -->
+        <div class="flex gap-4 sm:gap-6 text-lg sm:text-xl">
           <i class="fas fa-search hover:text-pink-600 cursor-pointer"></i>
           <i class="fas fa-heart hover:text-pink-600 cursor-pointer"></i>
-          <i
-            class="fas fa-cart-shopping hover:text-pink-600 cursor-pointer"
-          ></i>
+          <i class="fas fa-cart-shopping hover:text-pink-600 cursor-pointer"></i>
         </div>
       </div>
     </header>
-
+    
+    
     <section
       class="relative bg-cover bg-center h-screen"
       style="
@@ -451,9 +452,9 @@
       <h2 class="text-4xl text-center font-semibold text-gray-800">
         Customer <span class="text-pink-600">Reviews</span>
       </h2>
-      <div class="container mx-auto mt-12 flex justify-center space-x-8">
+      <div class="container mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div
-          class="bg-white rounded-lg shadow-lg w-72 p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
+          class="bg-white rounded-lg shadow-lg p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
         >
           <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4">
             <img
@@ -464,104 +465,77 @@
           </div>
           <h3 class="text-xl font-semibold text-pink-600">Luy Kanika</h3>
           <div class="flex justify-center gap-4 mt-4">
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-linkedin"></i
-            ></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-linkedin"></i></a>
           </div>
           <p class="text-gray-600 mt-4 text-sm">
-            "The flowers were absolutely beautiful, and the delivery was fast! I
-            highly recommend this service."
+            "The flowers were absolutely beautiful, and the delivery was fast! I highly recommend this service."
           </p>
         </div>
         <div
-          class="bg-white rounded-lg shadow-lg w-72 p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
+          class="bg-white rounded-lg shadow-lg p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
         >
           <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4">
             <img
               src="./img/net.jpg"
-              alt="Customer 1"
+              alt="Customer 2"
               class="w-full h-full object-cover"
             />
           </div>
           <h3 class="text-xl font-semibold text-pink-600">Sorn Sophamarinet</h3>
           <div class="flex justify-center gap-4 mt-4">
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-linkedin"></i
-            ></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-linkedin"></i></a>
           </div>
           <p class="text-gray-600 mt-4 text-sm">
-            "I was amazed by the quality of the flowers. They arrived fresh and
-            made the perfect gift!"
+            "I was amazed by the quality of the flowers. They arrived fresh and made the perfect gift!"
           </p>
         </div>
         <div
-          class="bg-white rounded-lg shadow-lg w-72 p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
+          class="bg-white rounded-lg shadow-lg p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
         >
           <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4">
             <img
               src="./img/elodie.jpg"
-              alt="Customer 1"
+              alt="Customer 3"
               class="w-full h-full object-cover"
             />
           </div>
           <h3 class="text-xl font-semibold text-pink-600">Sok Elodie</h3>
           <div class="flex justify-center gap-4 mt-4">
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-linkedin"></i
-            ></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-linkedin"></i></a>
           </div>
           <p class="text-gray-600 mt-4 text-sm">
-            "The bouquet I ordered was beyond beautiful. It brightened up my
-            room instantly!"
+            "The bouquet I ordered was beyond beautiful. It brightened up my room instantly!"
           </p>
         </div>
         <div
-          class="bg-white rounded-lg shadow-lg w-72 p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
+          class="bg-white rounded-lg shadow-lg p-6 text-center transition-all transform hover:scale-105 hover:shadow-2xl"
         >
           <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4">
             <img
               src="./img/nich.jpg"
-              alt="Customer 1"
+              alt="Customer 4"
               class="w-full h-full object-cover"
             />
           </div>
           <h3 class="text-xl font-semibold text-pink-600">An Sreynich</h3>
           <div class="flex justify-center gap-4 mt-4">
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" class="text-pink-600"
-              ><i class="fab fa-linkedin"></i
-            ></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-pink-600"><i class="fab fa-linkedin"></i></a>
           </div>
           <p class="text-gray-600 mt-4 text-sm">
-            "I ordered flowers for my friend's birthday and they were a huge
-            hit! Thank you for such great service."
+            "I ordered flowers for my friend's birthday and they were a huge hit! Thank you for such great service."
           </p>
         </div>
       </div>
     </section>
+    
     <footer class="bg-pink-600 text-white text-center py-6">
       <p>&copy; 2025 Flowers. All rights reserved.</p>
     </footer>
